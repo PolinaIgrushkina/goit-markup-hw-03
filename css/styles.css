@@ -294,6 +294,26 @@ a.contacts.footer:focus {
   
 
 /* Стилизация секции team */
+
+.section.team {
+    background-color: var(--button-background-color);
+}
+
+.team-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-item {
+    background-color: var(--secondary-text-color);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.team-title {
+    margin-bottom: 50px;
+}
+
 .team {
     font-weight: 500;
     font-size: 16px;
@@ -303,11 +323,12 @@ a.contacts.footer:focus {
 }
 
 .team h3 { 
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 30px auto 10px;
 
     color: var(--title-text-color);
 }
