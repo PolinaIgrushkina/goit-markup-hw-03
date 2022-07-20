@@ -47,6 +47,7 @@ img {
     --color-logo-black: #000000;
     --color-contacts: #757575;
     --button-background-color: #F5F4FA;
+    --color-border-bottom-header: #ECECEC;
 }
 
 body {
@@ -82,9 +83,28 @@ a {
 
 .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* Стилизация header  */
+header: {
+    background-color: var(--secondary-text-colour);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border-bottom-header);
+}
+
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -95,8 +115,21 @@ a {
     color: var(--color-logo-black);
 }
 
+.logo.header {
+    display: block;
+}
+
 .accent {
     color: var(--accent-color);
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .site-nav a {
@@ -106,6 +139,15 @@ a {
     letter-spacing: 0.02em;
 
     color: var(--title-text-color);
+}
+
+.contacts-header {
+    display: flex;
+    margin-left: 331px;
+}
+
+.contacts-header .item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .contacts a {
