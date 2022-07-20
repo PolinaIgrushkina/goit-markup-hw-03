@@ -83,8 +83,6 @@ a {
 
 .container {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
     outline: 2px solid red;
 }
@@ -95,14 +93,18 @@ a {
 }
 
 /* Стилизация header  */
-header: {
+header {
     background-color: var(--secondary-text-colour);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .main-nav {
     display: flex;
     align-items: center;
     border-bottom: 1px solid var(--color-border-bottom-header);
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .logo {
@@ -216,15 +218,29 @@ a.contacts.footer:focus {
     text-align: center;
     letter-spacing: 0.06em;
 
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-color: var(--secondary-background-color);
 }
 
-h1 {
+.container-hero {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
-    
+
+    margin: 0 auto 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+
     color: var(--secondary-text-color);
 }
 
@@ -232,20 +248,30 @@ h1 {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+    display: inline-block;
     align-items: center;
+    margin: 0 auto; 
     
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
 }
 
 /* Стилизация секции benefits */
+.benefits-items {
+    display: flex;   
+}
+
+.benefits-items .item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .benefits h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
     
     color: var(--title-text-color);
 }
@@ -257,6 +283,15 @@ h1 {
 }
 
 /* Стилизация секции services */
+.services-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-title {
+    margin-bottom: 50px;
+}
+  
 
 /* Стилизация секции team */
 .team {
