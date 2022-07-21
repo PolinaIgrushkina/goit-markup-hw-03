@@ -145,7 +145,7 @@ header {
 
 .contacts-header {
     display: flex;
-    margin-left: 331px;
+    margin-left: auto;
 }
 
 .contacts-header .item:not(:last-child) {
