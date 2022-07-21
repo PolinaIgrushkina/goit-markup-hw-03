@@ -84,7 +84,7 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /*outline: 2px solid red;*/
 }
 
 .section {
@@ -394,6 +394,10 @@ a.contacts.footer:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.work-examples .item {
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .work-examples h2 {
