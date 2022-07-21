@@ -97,12 +97,12 @@ header {
     background-color: var(--secondary-text-colour);
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid var(--color-border-bottom-header);
 }
 
 .main-nav {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--color-border-bottom-header);
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -184,7 +184,7 @@ footer {
     background-color: var(--secondary-background-color);
 }
 
-.container-footer {
+footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -263,12 +263,22 @@ a.contacts.footer:focus {
     display: inline-block;
     align-items: center;
     margin: 0 auto; 
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 4px;
+    border: transparent;
     
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
 }
 
 /* Стилизация секции benefits */
+.container.benefits {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
 .benefits-items {
     display: flex;   
 }
@@ -276,6 +286,11 @@ a.contacts.footer:focus {
 .benefits-items .item:not(:last-child) {
     margin-right: 30px;
 }
+
+.benefits-items .item {
+    max-width: 270px;
+}
+
 
 .benefits h3 {
     font-weight: 700;
@@ -295,6 +310,10 @@ a.contacts.footer:focus {
 }
 
 /* Стилизация секции services */
+.section.services {
+    padding-top: 0;
+}
+
 .services-items {
     display: flex;
     justify-content: space-between;
