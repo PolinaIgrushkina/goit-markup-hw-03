@@ -354,12 +354,31 @@ a.contacts.footer:focus {
 }
 
 /* Стилизация страницы portfolio*/
+.container-portfolio {
+    width: 1170px;
+}
+
+.section.portfolio {
+    background-color: #E5E5E5;
+}
+
+.work-types {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
 .work-types .button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+
+    padding: 6px 22px;
+    border: 0px;
+    border-radius: 4px;
     
     color: var(--title-text-color);
     background-color: var(--button-background-color);
@@ -371,13 +390,27 @@ a.contacts.footer:focus {
     background-color: var(--accent-color);
 }
 
+.work-examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .work-examples h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    text-align: start;
     
     color: var(--title-text-color);
+}
+
+
+.caption {
+    padding: 20px 24px;
+
+    background-color: var(--secondary-text-color);
 }
 
 .work-examples p {
